@@ -4,9 +4,9 @@ services:
     build:
       context: mev-boost
       args:
-        UPSTREAM_VERSION: 1.7
+        UPSTREAM_VERSION: v1.7
     volumes:
-      - "data:/var/lib/mev-boost"
+      - data:/var/lib/mev-boost
     environment:
       RELAYS: ""
       EXTRA_OPTS: ""
