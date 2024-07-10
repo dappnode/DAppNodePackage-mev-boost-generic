@@ -1,0 +1,4 @@
+# DAppNodeSDK release directories
+build_*
+releases*
+docker-compose-tmp.yml

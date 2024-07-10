@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  mev-boost:
+    build:
+      context: mev-boost
+      args:
+        UPSTREAM_VERSION: 1.7
+    volumes:
+      - "data:/var/lib/mev-boost"
+    environment:
+      RELAYS: ""
+      EXTRA_OPTS: ""
+    restart: unless-stopped
+volumes:
+  data: {}

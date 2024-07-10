@@ -1,0 +1,23 @@
+{
+  "shortDescription": "MEV Boost allows PoS Ethereum consensus clients to outsource block construction",
+  "description": "MEV Boost allows validators in Ethereum Holesky proof-of-stake to request blocks from a network of builders.\nThis project is part of the Flashbots research towards proposer/builder separation for Maximal Extractable Value (MEV) mitigation. MEV Boost can connect to relays that aggregate multiple builders. The builders prepare full blocks, optimizing for MEV extraction and fair distribution of the rewards. The Consensus Layer client of the validator proposes the most profitable block received from MEV Boost.",
+  "upstream": [
+    {
+      "repo": "flashbots/mev-boost",
+      "version": "1.7",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
+  "type": "service",
+  "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
+  "architectures": ["linux/amd64", "linux/arm64"],
+  "categories": ["Economic incentive"],
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-mev-boost-generic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dappnode/DAppNodePackage-mev-boost-generic"
+  },
+  "license": "MIT"
+}
