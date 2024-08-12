@@ -1,6 +1,6 @@
 {
   "name": "mev-boost-holesky.dnp.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "links": {
     "endpoint": "http://mev-boost-holesky.dappnode:18550",
     "homepage": "https://github.com/flashbots/mev-boost",
