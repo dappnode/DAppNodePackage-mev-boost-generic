@@ -3,7 +3,7 @@
 SUPPORTED_NETWORKS="mainnet holesky"
 EXTRA_OPTS="${EXTRA_OPTS:-}"
 
-validate_env_is_set() {
+_validate_env_is_set() {
   env_name="$1"
   env_value="$2"
 
@@ -17,8 +17,8 @@ validate_env_is_set() {
 setup_mev_boost() {
   # Relay urls - single entry or comma-separated list (scheme://pubkey@host)
   # The format validation is made by the MEV Boost binary
-  validate_env_is_set "RELAYS" "${RELAYS}"
-  validate_env_is_set "NETWORK" "${NETWORK}"
+  _validate_env_is_set "RELAYS" "${RELAYS}"
+  _validate_env_is_set "NETWORK" "${NETWORK}"
 
   # Check if the network is supported
   if ! echo "${SUPPORTED_NETWORKS}" | grep -q "${NETWORK}"; then
@@ -31,12 +31,15 @@ setup_mev_boost() {
 }
 
 run_mev_boost() {
-  echo "[INFO - entrypoint] Starting MEV Boost with relays: ${RELAYS}"
+  flags="-addr 0.0.0.0:18550 \
+    -relay-check \
+    -relays $RELAYS $EXTRA_OPTS
+  "
+
+  echo "[INFO - entrypoint] Starting MEV Boost with flags: $flags"
 
   # shellcheck disable=SC2086
-  exec /app/mev-boost -addr 0.0.0.0:18550 \
-    -relay-check \
-    -relays "${RELAYS}" ${EXTRA_OPTS}
+  exec /app/mev-boost $flags
 }
 
 setup_mev_boost
