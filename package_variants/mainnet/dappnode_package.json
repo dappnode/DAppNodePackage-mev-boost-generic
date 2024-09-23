@@ -1,6 +1,6 @@
 {
   "name": "mev-boost.dnp.dappnode.eth",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "links": {
     "endpoint": "http://mev-boost.dappnode:18550",
     "homepage": "https://github.com/flashbots/mev-boost",
