@@ -1,5 +1,5 @@
 ARG UPSTREAM_VERSION
-FROM flashbots/mev-boost:${UPSTREAM_VERSION}
+FROM flashbots/mev-boost:${UPSTREAM_VERSION#v}
 
 ARG NETWORK
 
