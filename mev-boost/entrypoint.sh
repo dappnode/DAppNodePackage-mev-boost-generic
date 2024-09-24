@@ -33,8 +33,7 @@ setup_mev_boost() {
 run_mev_boost() {
   flags="-addr 0.0.0.0:18550 \
     -relay-check \
-    -relays $RELAYS $EXTRA_OPTS
-  "
+    -relays $RELAYS $EXTRA_OPTS"
 
   echo "[INFO - entrypoint] Starting MEV Boost with flags: $flags"
 
