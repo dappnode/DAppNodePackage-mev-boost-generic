@@ -3,4 +3,4 @@ services:
     build:
       args:
         NETWORK: holesky
-        UPSTREAM_VERSION: v1.9-rc2
+        UPSTREAM_VERSION: v1.9rc2
