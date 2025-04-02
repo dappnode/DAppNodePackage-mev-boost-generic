@@ -1,0 +1,16 @@
+{
+  "name": "mev-boost-hoodi.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "upstream": [
+    {
+      "repo": "flashbots/mev-boost",
+      "version": "v1.9rc3",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
+  "links": {
+    "endpoint": "http://mev-boost-hoodi.dappnode:18550",
+    "homepage": "https://github.com/flashbots/mev-boost",
+    "docs": "https://github.com/flashbots/mev-boost/wiki"
+  }
+}

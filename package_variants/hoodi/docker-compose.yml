@@ -1,0 +1,6 @@
+services:
+  mev-boost:
+    build:
+      args:
+        NETWORK: hoodi
+        UPSTREAM_VERSION: 1.9rc3
