@@ -1,6 +1,6 @@
 {
   "name": "mev-boost-holesky.dnp.dappnode.eth",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "upstream": [
     {
       "repo": "flashbots/mev-boost",

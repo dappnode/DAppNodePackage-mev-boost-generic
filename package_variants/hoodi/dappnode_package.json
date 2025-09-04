@@ -1,6 +1,6 @@
 {
   "name": "mev-boost-hoodi.dnp.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "upstream": [
     {
       "repo": "flashbots/mev-boost",
