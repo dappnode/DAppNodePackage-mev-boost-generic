@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SUPPORTED_NETWORKS="mainnet holesky hoodi"
+SUPPORTED_NETWORKS="mainnet hoodi"
 EXTRA_OPTS="${EXTRA_OPTS:-}"
 
 _validate_env_is_set() {
