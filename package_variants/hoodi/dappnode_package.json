@@ -4,7 +4,7 @@
   "upstream": [
     {
       "repo": "flashbots/mev-boost",
-      "version": "v1.9rc3",
+      "version": "1.10a7",
       "arg": "UPSTREAM_VERSION"
     }
   ],
