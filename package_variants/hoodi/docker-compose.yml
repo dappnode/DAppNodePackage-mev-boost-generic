@@ -3,4 +3,4 @@ services:
     build:
       args:
         NETWORK: hoodi
-        UPSTREAM_VERSION: 1.9rc3
+        UPSTREAM_VERSION: 1.10a7
